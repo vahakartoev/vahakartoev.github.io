@@ -1,2 +1,2 @@
-# vahakartoev.github.io
+# Kartoev Vaha
 Главная страница
