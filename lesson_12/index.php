@@ -15,7 +15,7 @@
 		<div class="row">
 			<div class="col-lg-6 offset-lg-3">
 							<h1 class="header text-center">
-				    <span>Получите видео-инструкциююю</span>
+				    <span>Пdddолучите видео-инструкциююю</span>
 				    <strong class="text-uppercase">Как заработать свой первый миллион</strong>
 		     </h1>
 			</div>
