@@ -3093,17 +3093,17 @@
 				<div class="calc__inputs">
 					<div class="calc__input">
 						<label>Стоимость товара:</label>
-						<input class="input__sto" type="tel" id="input__sto" max="500000" value="0"
+						<input class="input__sto" type="tel" id="input__sto" max="1000000" value="0"
 							oninput="range__sto.value = input__sto.value" placeholder="0" wfd-id="id2">
-						<input class="input__sto" tabindex="-1" type="range" id="range__sto" max="500000" value="0"
+						<input class="input__sto" tabindex="-1" type="range" id="range__sto" max="1000000" value="0"
 							oninput="input__sto.value = range__sto.value" wfd-id="id3">
 					</div>
 					<div class="calc__input">
 						<label>Первоначальный взнос:</label>
-						<input class="input__vznos" type="tel" id="input__vznos" value="0" min="0" max="500000"
+						<input class="input__vznos" type="tel" id="input__vznos" value="0" min="0" max="1000000"
 							oninput="range__vznos.value = input__vznos.value" placeholder="0" wfd-id="id4">
 						<input class="input__vznos" type="range" tabindex="-1" id="range__vznos" value="0" min="0"
-							max="500000" oninput="input__vznos.value = range__vznos.value" wfd-id="id5">
+							max="1000000" oninput="input__vznos.value = range__vznos.value" wfd-id="id5">
 					</div>
 					<div class="calc__input">
 						<label>Выберите срок рассрочки:</label>
@@ -3821,8 +3821,8 @@
 					});
 
 					$('.input__sto').bind('propertychange change click keyup input paste', function () {
-						if ($(this).val() > 500000) {
-							$('.input__sto').val(500000);
+						if ($(this).val() > 1000000) {
+							$('.input__sto').val(1000000);
 						}
 					});
 
@@ -3856,13 +3856,13 @@
 						} else if (thirdValue.val() == 8) {
 							thirdValue.attr('data-nac', 36.64);
 						} else if (thirdValue.val() == 9) {
-							thirdValue.attr('data-nac', 40.00);
+							thirdValue.attr('data-nac', 39.97);
 						} else if (thirdValue.val() == 10) {
-							thirdValue.attr('data-nac', 53.33);
+							thirdValue.attr('data-nac', 43.33);
 						} else if (thirdValue.val() == 11) {
-							thirdValue.attr('data-nac', 60);
+							thirdValue.attr('data-nac', 46,63);
 						} else if (thirdValue.val() == 12) {
-							thirdValue.attr('data-nac', 66.66);
+							thirdValue.attr('data-nac', 49.96);
 						}
 						var nac = ((firstValue - secondValue) * thirdValue.attr('data-nac')) / 100;
 						var sum = firstValue + nac;
@@ -4287,17 +4287,17 @@
 				<div class="calc__inputs2">
 					<div class="calc__input2">
 						<label>Стоимость товара:</label>
-						<input class="input__sto2" type="tel" id="input__sto2" max="500000" value="0"
+						<input class="input__sto2" type="tel" id="input__sto2" max="1000000" value="0"
 							oninput="range__sto2.value = input__sto2.value" placeholder="0" disabled="" wfd-id="id35">
-						<input class="input__sto2" tabindex="-1" type="range" id="range__sto2" max="500000" value="0"
+						<input class="input__sto2" tabindex="-1" type="range" id="range__sto2" max="1000000" value="0"
 							oninput="input__sto2.value = range__sto2.value" disabled="" wfd-id="id36">
 					</div>
 					<div class="calc__input2">
 						<label>Первоначальный взнос:</label>
-						<input class="input__vznos2" type="tel" id="input__vznos2" value="0" min="0" max="500000"
+						<input class="input__vznos2" type="tel" id="input__vznos2" value="0" min="0" max="1000000"
 							oninput="range__vznos2.value = input__vznos2.value" placeholder="0" wfd-id="id37">
 						<input class="input__vznos2" type="range" tabindex="-1" id="range__vznos2" value="0" min="0"
-							max="500000" oninput="input__vznos2.value = range__vznos2.value" wfd-id="id38">
+							max="1000000" oninput="input__vznos2.value = range__vznos2.value" wfd-id="id38">
 					</div>
 					<div class="calc__input2">
 						<label>Выберите срок рассрочки:</label>
@@ -4969,8 +4969,8 @@
 			});
 
 			$('.input__sto2').bind('propertychange change click keyup input paste', function () {
-				if ($(this).val() > 500000) {
-					$('.input__sto2').val(500000);
+				if ($(this).val() > 1000000) {
+					$('.input__sto2').val(1000000);
 				}
 			});
 
@@ -4996,7 +4996,7 @@
 				} else if (thirdValue.val() == 4) {
 					thirdValue.attr('data-nac2', 35);
 				} else if (thirdValue.val() == 5) {
-					thirdValue.attr('data-nac2', 41);
+					thirdValue.attr('data-nac2', 42);
 				} else if (thirdValue.val() == 6) {
 					thirdValue.attr('data-nac2', 49);
 				} else if (thirdValue.val() == 7) {
