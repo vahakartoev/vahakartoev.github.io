@@ -3107,10 +3107,10 @@
 					</div>
 					<div class="calc__input">
 						<label>Выберите срок рассрочки:</label>
-						<input class="input__srok" type="tel" id="input__srok" value="1" min="1" max="9"
+						<input class="input__srok" type="tel" id="input__srok" value="1" min="1" max="12"
 							oninput="range__srok.value = input__srok.value" placeholder="1" data-nac="23" data-vz="25"
 							wfd-id="id6">
-						<input class="input__srok" type="range" tabindex="-1" id="range__srok" value="1" min="1" max="9"
+						<input class="input__srok" type="range" tabindex="-1" id="range__srok" value="1" min="1" max="12"
 							oninput="input__srok.value = range__srok.value" data-nac="23" data-vz="25" wfd-id="id7">
 					</div>
 				</div>
@@ -3829,8 +3829,8 @@
 					$('.input__srok').bind('propertychange change click keyup input paste', function () {
 						if ($('.input__srok').val() == 0) {
 							$('.input__srok').val(1);
-						} else if ($('.input__srok').val() > 9) {
-							$('.input__srok').val(9);
+						} else if ($('.input__srok').val() > 12) {
+							$('.input__srok').val(12);
 						}
 					});
 
